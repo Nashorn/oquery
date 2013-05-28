@@ -18,3 +18,22 @@ relationships using normal javascript syntax.
 - Query deeply nested objects and arrays
 - Join and filter across multiple arrays
 
+
+# Installation
+- Step 1, include a reference to 'sampledata.js' for testing only
+- Step 2, include a reference to oquery.js
+
+ex:
+```xml
+<html>
+	<head>
+		<script src="sampledata.js"></script>
+		<script src="oquery.js"></script>
+	</head>
+	<body></body>
+</html>
+```
+
+# Sample Data Set
+
+
