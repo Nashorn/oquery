@@ -34,6 +34,56 @@ ex:
 </html>
 ```
 
-# Sample Data Set
+# Usage
+- Where clause
+<pre>
+	<code>
+	var result = profile.data.info.userInfo.ideaList
+	    .where("$.ideaTitle.indexOf('with') >= 0")
+	</code>
+</pre>
+
+
+- Joins
+<pre>
+	<code>
+	var accounts = [
+    	{userId:"Sandy007", accountType:"registered"}
+	];
+	
+var result = profile.data.info.userInfo.ideaList
+    .where("$.ideaTitle.indexOf('with') >= 0")
+    .join(accounts).as("account", "$.userName == account.userId")
+	</code>
+</pre>
+
+
+- Collection
+<pre>
+	<code>
+	var accounts = [
+    	{userId:"Sandy007", accountType:"registered"}
+	];
+	
+var result = profile.data.info.userInfo.ideaList
+    .where("$.ideaTitle.indexOf('with') >= 0")
+    .join(accounts).as("account", "$.userName == account.userId")
+	</code>
+</pre>
+
+
+- Sorting
+<pre>
+	<code>
+	var accounts = [
+    	{userId:"Sandy007", accountType:"registered"}
+	];
+	
+var result = profile.data.info.userInfo.ideaList
+    .where("$.ideaTitle.indexOf('with') >= 0")
+    .join(accounts).as("account", "$.userName == account.userId")
+    .sort()
+	</code>
+</pre>
 
 
