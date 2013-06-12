@@ -65,9 +65,9 @@ ex:
     	{userId:"Sandy007", accountType:"registered"}
 	];
 	
-var result = profile.data.info.userInfo.ideaList
-    .where("$.ideaTitle.indexOf('with') >= 0")
-    .join(accounts).as("account", "$.userName == account.userId")
+	var result = profile.data.info.userInfo.ideaList
+	    .where("$.ideaTitle.indexOf('with') >= 0")
+	    .join(accounts).as("account", "$.userName == account.userId")
 	</code>
 </pre>
 
@@ -79,10 +79,10 @@ var result = profile.data.info.userInfo.ideaList
     	{userId:"Sandy007", accountType:"registered"}
 	];
 	
-var result = profile.data.info.userInfo.ideaList
-    .where("$.ideaTitle.indexOf('with') >= 0")
-    .join(accounts).as("account", "$.userName == account.userId")
-    .sort()
+	var result = profile.data.info.userInfo.ideaList
+	    .where("$.ideaTitle.indexOf('with') >= 0")
+	    .join(accounts).as("account", "$.userName == account.userId")
+	    .sort()
 	</code>
 </pre>
 
